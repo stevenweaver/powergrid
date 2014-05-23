@@ -158,7 +158,7 @@ G.add_edge("Jacksonville", "Tampa", weight=4 )
 G.add_edge("Tampa", "Miami", weight=4 )
 
 print("Betweenness")
-b=betweenness_centrality(G)
+b=betweenness_centrality(G, True, True)
 sorted_b = sorted(b.iteritems(), key=operator.itemgetter(1), reverse=True)
 for x in sorted_b:
     print("%s : %5.3f"%(x[0],x[1]))
