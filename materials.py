@@ -11,6 +11,6 @@ class Materials:
 
     def load_spaces(self):
         spaces = {}
-        [spaces.update({x:Space(3,3,3,1)}) for x in range(8)]
-        [spaces.update({((x+6)*2):Space(0, 0, 0, 1)}) for x in range(4)]
+        [spaces.update({(x+1):Space(3,3,3,1)}) for x in range(8)]
+        [spaces.update({((x+5)*2):Space(0, 0, 0, 1)}) for x in range(4)]
         return spaces

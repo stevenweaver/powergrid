@@ -11,3 +11,4 @@ import materials
 board = maps.usa()
 players = [player.Player("Steven"), player.Player("Steve-bot")]
 m = materials.Materials()
+print m.spaces
